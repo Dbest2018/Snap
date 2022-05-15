@@ -1,0 +1,45 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --clrw: hsl(0, 0%, 98%);
+    --clrgray: hsl(0, 0%, 41%);
+    --clrblack: hsl(0, 0%, 8%);
+    --fs: 18px;
+    --fm: 36px;
+    --fl: 54px; 
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-size: var(--fs);
+    background-color: var(--clrw);
+}
+
+header{
+    display: flex;
+    padding: 2rem;
+}
+
+.header-nav{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.header-nav > *{
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.header-hamburger__menu{
+    display: none;
+}
+
+.header-rightside{
+    display: flex;
+    margin-left: auto;
+}
+.header-rightside > div{
+    margin-left: 1rem;
+}
