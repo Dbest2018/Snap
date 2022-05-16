@@ -15,12 +15,14 @@
 body{
     font-family: 'Epilogue', sans-serif;
     font-size: var(--fs);
+    color: var(--clrgray);
     background-color: var(--clrw);
 }
 
 header{
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
+    align-items: center;
 }
 
 .header-nav{
@@ -39,7 +41,30 @@ header{
 .header-rightside{
     display: flex;
     margin-left: auto;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    cursor: pointer;
 }
-.header-rightside > div{
+.header-signup{
+    display: flex;
+    align-items: center;
     margin-left: 1rem;
+    padding: 0 1rem;
+    height: 100%;
+    border: 2px solid var(--clrgray);
+    border-radius: .75rem;
+}
+
+@media (max-width: 390px) {
+    .header-hamburger__menu{
+        display: inline;
+        margin-left: auto;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header-rightside{
+        display: none;
+    }
 }
