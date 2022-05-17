@@ -27,7 +27,7 @@ header{
 
 .header-nav{
     display: flex;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .header-nav > *{
