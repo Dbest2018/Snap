@@ -55,6 +55,12 @@ header{
     border: 2px solid var(--clrgray);
     border-radius: .75rem;
 }
+.header-signup:hover{
+    background-color: var(--clrblack);
+    border: none;
+    transition: .1s;
+    color: var(--clrw);
+}
 
 main{
     display: grid;
